@@ -13,7 +13,7 @@ export const MoodSelector = () => {
 
 document.addEventListener("change", moodChangeEvent => {
     if (moodChangeEvent.target.value !== '0') {
-        const broadcastMoodChange = new CustomEvent("moodChanged",  {
+        const broadcastMoodChange = new CustomEvent("moodChanged", {
             detail: {
                 chosenMood: moodChangeEvent.target.value
             }
