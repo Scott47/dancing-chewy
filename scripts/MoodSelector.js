@@ -19,7 +19,6 @@ document.addEventListener("change", moodChangeEvent => {
             }
         }
         )
-        console.log(broadcastMoodChange)
         mainContainer.dispatchEvent(broadcastMoodChange)
     }
 })
