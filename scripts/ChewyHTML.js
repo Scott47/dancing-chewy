@@ -27,6 +27,7 @@ export const ChewyHTML = (stringOfHTML) => {
 mainContainer.addEventListener("moodChanged", evt => {
     console.log(evt.detail)
     const chewbaccaGifs = getChewyGifs()
+    console.log(chewbaccaGifs)
     const foundGif = chewbaccaGifs.find(gif => {
 
         if (gif.itemurl.includes(evt.detail.chosenMood)) {

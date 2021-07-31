@@ -6,7 +6,7 @@ const database = {
     moods: [
         {
             id: 1,
-            mood: "giddy"
+            mood: "annoyed"
         },
         {
             id: 2,
@@ -18,11 +18,11 @@ const database = {
         },
         {
             id: 4,
-            mood: "extra"
+            mood: "weird"
         },
         {
             id: 5,
-            mood: "demure"
+            mood: "party"
         },
         {
             id: 6,
@@ -30,26 +30,26 @@ const database = {
         },
         {
             id: 7,
-            mood: "happy"
+            mood: "singing"
         },
         {
             id: 8,
-            mood: "obstinate"
+            mood: "joyful"
         },
         {
             id: 9,
-            mood: "superfly"
+            mood: "cold"
         },
         {
             id: 10,
-            mood: "determined"
+            mood: "dance"
         }
 
     ]
 }
 
 export const fetchChewyGifs = () => {
-    return fetch(`${tenorBaseUrl}?q=chewbacca&key=${apiKey}&limit=24`, {
+    return fetch(`${tenorBaseUrl}?q=chewbacca&key=${apiKey}&limit=48`, {
         method: "GET",
         headers: {
             "Content-Type": "application/json",
