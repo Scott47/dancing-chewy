@@ -62,3 +62,7 @@ export const fetchChewyGifs = () => {
 export const getChewyGifs = () => {
     return database.chewygifs.map(chewy => ({...chewy}))
 }
+
+export const getMoods = () => {
+    return database.moods.map(mood => ({...mood}))
+}
