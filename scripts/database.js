@@ -57,6 +57,7 @@ export const fetchChewyGifs = () => {
     })
     .then(res => res.json())
     .then(r => database.chewygifs = r.results)
+    .catch((error) => console.log("error:", error))
 }
 
 export const getChewyGifs = () => {
