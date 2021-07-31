@@ -6,7 +6,7 @@ const database = {
     moods: [
         {
             id: 1,
-            mood: "happy"
+            mood: "giddy"
         },
         {
             id: 2,
@@ -14,7 +14,7 @@ const database = {
         },
         {
             id: 3,
-            mood: "giddy"
+            mood: "chill"
         },
         {
             id: 4,
@@ -22,7 +22,7 @@ const database = {
         },
         {
             id: 5,
-            mood: "chill"
+            mood: "demure"
         },
         {
             id: 6,
@@ -30,20 +30,20 @@ const database = {
         },
         {
             id: 7,
-            mood: "demure"
+            mood: "happy"
         },
         {
             id: 8,
-            mood: "fly"
+            mood: "obstinate"
         },
         {
             id: 9,
-            mood: "bored"
+            mood: "superfly"
         },
         {
             id: 10,
-            mood: "special"
-        },
+            mood: "determined"
+        }
 
     ]
 }
