@@ -4,10 +4,6 @@ const database = {
     chewygifs: [],
     moods: [
         {
-            id: 1,
-            mood: "annoyed"
-        },
-        {
             id: 2,
             mood: "upset"
         },
@@ -41,9 +37,8 @@ const database = {
         },
         {
             id: 10,
-            mood: "dance"
+            mood: "dancing"
         }
-
     ]
 }
 

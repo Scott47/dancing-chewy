@@ -7,10 +7,10 @@ const mainContainer = document.querySelector("#container")
 export const ChewyHTML = (stringOfHTML, currentMood) => {
     if (stringOfHTML) {
         return `
-        <h1><img alt="dancing-chewy" src="images/dancing_chewy1.gif" />Welcome to Dancing Chewy!<img alt="dancing-chewy" src="images/dancing_chewy1.gif" /></h1>
+        <h1 class="dancing-chewy-header"><img alt="dancing-chewy" src="images/dancing_chewy1.gif" />Welcome to Dancing Chewy!<img alt="dancing-chewy" src="images/dancing_chewy1.gif" /></h1>
         <section class="chewygif">
             <div>${MoodSelector(currentMood)}</div>
-                <h2>ChewyGifs</h2>
+                <h2>${currentMood} Chewy</h2>
                 ${stringOfHTML}
             </section>
         `
@@ -20,12 +20,9 @@ export const ChewyHTML = (stringOfHTML, currentMood) => {
             <section class="chewygif">
             <div>${MoodSelector(currentMood)}</div>
                 <p>No mood selected</P>
-                <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="853" height="480" src="https://www.youtube.com/embed/CEC84P6SMhQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>  
             </section>
         `
-
     }
 }
 
