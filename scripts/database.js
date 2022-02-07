@@ -1,13 +1,8 @@
 import { tenorBaseUrl, apiKey } from "../.Settings.js"
 
 const database = {
-    dancetypes: [],
     chewygifs: [],
     moods: [
-        {
-            id: 1,
-            mood: "annoyed"
-        },
         {
             id: 2,
             mood: "upset"
@@ -42,9 +37,8 @@ const database = {
         },
         {
             id: 10,
-            mood: "dance"
+            mood: "dancing"
         }
-
     ]
 }
 

@@ -4,26 +4,28 @@ import { getChewyGifs } from "./database.js"
 
 const mainContainer = document.querySelector("#container")
 
-export const ChewyHTML = (stringOfHTML) => {
+export const ChewyHTML = (stringOfHTML, currentMood) => {
     if (stringOfHTML) {
         return `
-            <section class="chewygif">
-            <div>${MoodSelector()}</div>
-                <h2>ChewyGifs</h2>
+        <h1 class="dancing-chewy-header"><img alt="dancing-chewy" src="images/dancing_chewy1.gif" />Welcome to Dancing Chewy!<img alt="dancing-chewy" src="images/dancing_chewy1.gif" /></h1>
+        <section class="chewygif">
+            <div>${MoodSelector(currentMood)}</div>
+                <h2>${currentMood} Chewy</h2>
                 ${stringOfHTML}
             </section>
         `
     } else {
        return  `
+       <h1><img alt="dancing-chewy" src="images/dancing_chewy1.gif" />Welcome to Dancing Chewy!<img alt="dancing-chewy" src="images/dancing_chewy1.gif" /></h1>
             <section class="chewygif">
-            <div>${MoodSelector()}</div>
-                <h2>ChewyGifs</h2>
+            <div>${MoodSelector(currentMood)}</div>
                 <p>No mood selected</P>
+                </div>  
             </section>
         `
-
     }
 }
+
 mainContainer.addEventListener("moodChanged", evt => {
     const chewbaccaGifs = getChewyGifs()
     const foundGif = chewbaccaGifs.find(gif => {
@@ -34,5 +36,7 @@ mainContainer.addEventListener("moodChanged", evt => {
         }
     })
     let htmlString = Chewy(foundGif)
-    mainContainer.innerHTML = ChewyHTML(htmlString)
+    mainContainer.innerHTML = ChewyHTML(htmlString, evt.detail.chosenMood)
 })
+
+{/* <iframe width="853" height="480" src="https://www.youtube.com/embed/5n7y1Kwg2Qw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}

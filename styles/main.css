@@ -1,0 +1,14 @@
+.chewygif {
+    padding-left: 5rem;
+    margin-left: 2rem;
+}
+body {
+    background: gray;
+}
+h1 {
+    text-align: center;
+}
+#chewy-gif {
+    width: 80%;
+    height: 60%;
+}
